@@ -1,0 +1,14 @@
+bin/
+obj/
+
+
+*.user
+*.suo
+*.log
+
+
+.vs/
+
+
+*.tmp
+*.cache
