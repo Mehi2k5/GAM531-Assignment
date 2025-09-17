@@ -1,24 +1,33 @@
-﻿using OpenTK.Windowing.Common;
-using OpenTK.Windowing.Desktop;
-using OpenTK.Mathematics;
+﻿using MathLibrary;
 using OpenTK.Graphics.OpenGL4;
+using OpenTK.Mathematics;
+using OpenTK.Windowing.Common;
+using OpenTK.Windowing.Desktop;
 
 
 class Program
 {
     static void Main()
     {
-        var nativeWindowSettings = new NativeWindowSettings()
-        {
-            Size = new Vector2i(800, 600),
-            Title = "OpenTK Test Window"
-        };
+        // Vector operations
+        var v1 = new Vector3D(1, 2, 3);
+        var v2 = new Vector3D(4, 5, 6);
 
-        // In OpenTK 4.9, use a custom Game class (derived from GameWindow)
-        using (var window = new Game(GameWindowSettings.Default, nativeWindowSettings))
-        {
-            window.Run();
-        }
+        Console.WriteLine("Vector Addition: " + (v1 + v2));
+        Console.WriteLine("Vector Subtraction: " + (v1 - v2));
+        Console.WriteLine("Dot Product: " + Vector3D.Dot(v1, v2));
+        Console.WriteLine("Cross Product: " + Vector3D.Cross(v1, v2));
+
+        // Matrix operations
+        var scale = Matrix4x4.Scale(2, 2, 2);
+        var rotate = Matrix4x4.RotateZ((float)Math.PI / 4); // 45 degrees
+        var transform = Matrix4x4.Multiply(scale, rotate);
+
+        var v = new Vector3D(1, 0, 0);
+        var result = transform.Transform(v);
+
+        Console.WriteLine("Original Vector: " + v);
+        Console.WriteLine("Scaled + Rotated Vector: " + result);
     }
 }
 
