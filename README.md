@@ -25,9 +25,9 @@
 
 ## Example Output
 
-Vector Addition: (5, 7, 9)
-Vector Subtraction: (-3, -3, -3)
-Dot Product: 32
-Cross Product: (-3, 6, -3)
-Original Vector: (1, 0, 0)
-Scaled + Rotated Vector: (1.4142135, 1.4142135, 0)
+Vector Addition: (5, 7, 9).
+Vector Subtraction: (-3, -3, -3).
+Dot Product: 32.
+Cross Product: (-3, 6, -3).
+Original Vector: (1, 0, 0).
+Scaled + Rotated Vector: (1.4142135, 1.4142135, 0).
