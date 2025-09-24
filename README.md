@@ -13,10 +13,6 @@ OpenTK provides the bindings to OpenGL needed to render 2D/3D graphics in C#.
 
 The program creates an OpenGL context using OpenTK’s `GameWindow`, sets up the cube geometry, and renders it inside the main loop with continuous rotation.
 
-## Example Screenshot
-![Cube Screenshot](screenshot.png)
-
-*(Replace `screenshot.png` with the actual filename of your screenshot in the repo.)*
 
 ## How to Run
 1. Clone the repository:
