@@ -21,5 +21,7 @@ The program creates an OpenGL context using OpenTK’s `GameWindow`, sets up the
    
 2. Navigate into the project folder and build:
    ```dotnet build
+   ```
 3. Run the project:
    ``` dotnet run
+   ```
