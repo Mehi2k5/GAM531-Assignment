@@ -18,3 +18,8 @@ The program creates an OpenGL context using OpenTK’s `GameWindow`, sets up the
 1. Clone the repository:
    ```bash
    git clone git@github.com:Mehi2k5/GAM531-Assignment1.git
+   
+2. Navigate into the project folder and build:
+   ```dotnet build
+3. Run the project:
+   ``` dotnet run
