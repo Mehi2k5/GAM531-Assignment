@@ -1,33 +1,24 @@
-# Assignment 2: Vector & Matrix Operations in C#
+# Assignment 3: Rendering a 3D Cube
 
 ## Library Used
-- **OpenTK** (for creating the project window and handling vectors/matrices).
+This project uses **OpenTK 4.9.4** with **.NET 8.0**.  
+OpenTK provides the bindings to OpenGL needed to render 2D/3D graphics in C#.
 
-## Features Implemented
+## How the Cube Was Rendered
+- Defined a cube using **8 unique 3D vertices** and indices to draw faces.
+- Applied a **perspective projection matrix** to simulate 3D depth.
+- Used a **view matrix** to position the camera looking at the cube.
+- Implemented a simple **rotation transformation on the Y-axis** so the cube spins in place.
+- Enabled **depth testing** to ensure correct face visibility when rendering.
 
-### Vector Operations
-- **Addition** of two vectors
-- **Subtraction** of two vectors
-- **Dot product** of two vectors
-- **Cross product** of two vectors
+The program creates an OpenGL context using OpenTK’s `GameWindow`, sets up the cube geometry, and renders it inside the main loop with continuous rotation.
 
-### Matrix Operations
-- **Identity matrix**
-- **Scaling matrix**
-- **Rotation matrix** (around the X-axis)
-- **Matrix multiplication**
+## Example Screenshot
+![Cube Screenshot](screenshot.png)
+
+*(Replace `screenshot.png` with the actual filename of your screenshot in the repo.)*
 
 ## How to Run
-1. Open the project in Visual Studio (requires **.NET 6.0** or **.NET 8.0**).  
-2. Build the project.  
-3. Run the program — a small window with a green rectangle should appear.  
-4. Check the console for example vector/matrix operation outputs.
-
-## Example Output
-
-- Vector Addition: (5, 7, 9)
-- Vector Subtraction: (-3, -3, -3)
-- Dot Product: 32
-- Cross Product: (-3, 6, -3)
-- Original Vector: (1, 0, 0)
-- Scaled + Rotated Vector: (1.4142135, 1.4142135, 0)
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:Mehi2k5/GAM531-Assignment1.git
