@@ -65,7 +65,7 @@ namespace OpenTK_FPSCamera
         public Game(GameWindowSettings gws, NativeWindowSettings nws) : base(gws, nws)
         {
             CursorState = CursorState.Grabbed; // hides and locks cursor
-        }`
+        }
 
 
 
