@@ -26,5 +26,6 @@ The player can move around a simple 3D environment, interact with objects, and e
 ---
 
 ## How to Build / Run
-1. Clone the repository: 
+1. Clone the repository:
+   ```bash 
    git clone git@github.com:Mehi2k5/GAM531-Assignment	.git
