@@ -9,8 +9,8 @@ The player can move around a simple 3D environment, interact with objects, and e
 ## Gameplay Instructions
 - **W / A / S / D** → Move forward / left / backward / right  
 - **Mouse** → Look around  
-- **E** → Toggle the lamp light (if near the lamp)  
-- **F** → Collect the gem (if near the gem)  
+- **E** → Toggle the lamp light (if near the lamp) (The lamp is the small box)
+- **F** → Collect the gem (if near the gem) (the small blue box) 
 - **Esc** → Grab/release the mouse cursor
 
 ---
